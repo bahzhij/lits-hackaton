@@ -1,0 +1,63 @@
+.modal-add-book{
+    width: 570px;
+    margin: 0  auto;
+    height: auto;
+    border:1px solid red;
+    background-color: #f2f4f6;
+    z-index: 1000;
+
+    padding: 40px 45px;
+}
+
+
+.modal-add-book .form {
+    display: block;
+    height: auto;
+    background-color: #f2f4f6;
+    font-weight: 1.25em;
+    border-radius: 3px;
+
+}
+.modal-add-book h1{
+    color:#3a4752;
+    text-transform: capitalize ;
+}
+.form > .input{
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 30px;
+    border: 0;
+    padding-left:20px ;
+}
+
+.input:focus::-webkit-input-placeholder {color: transparent}
+.input:focus::-moz-placeholder          {color: transparent}
+.input:focus:-moz-placeholder           {color: transparent}
+.input:focus:-ms-input-placeholder      {color: transparent}
+
+input, textarea {
+    outline:none;
+}
+.modal-add-book .form  [type="submit"]{
+    background: #f8521e;
+    text-transform: uppercase;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 30px;
+    border: 0;
+}
+
+.modal-add-book .form  [type="submit"]:hover {
+    cursor: pointer;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow:    2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow:         2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+

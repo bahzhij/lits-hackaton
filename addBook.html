@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/addBook.css" >
+    <link rel="stylesheet" href="css/ionicons.css">
+    <title>Title</title>
+</head>
+<body>
+<div id="myModal" class="modal-add-book">
+
+    <div class="modal-content">
+        <h1><i class="icon ion-plus"></i> Add book</h1>
+        <form id="add-book-form" class="form" name="add-book-form" method="POST" onsubmit="addNewBook();return false;">
+            <input id="img" name="img" class="input box-shadow"type="text" placeholder="Image" value=""/>
+            <input id="name"  class="input box-shadow" name="name" type="text" placeholder="Name" value=""/>
+            <select id="category"  class="input box-shadow" name="category"></select>
+            <input id="author"  class="input box-shadow" name="author" type="text" placeholder="Author" value=""/>
+            <input id="conditions"  class="input box-shadow" name="conditions" type="text" placeholder="Conditions" value=""/>
+            <input id="user" name="user"  class="input box-shadow" type="text" placeholder="User" value=""/>
+            <textarea name="description"  class="input box-shadow"id="description" placeholder="Description..."></textarea>
+            <input type="submit" value="Submit"/>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/local-storage.js"></script>
+<script type="text/javascript" src="js/addBook.js"></script>
+</body>
+</html>

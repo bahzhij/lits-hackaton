@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookcrossing</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ionicons.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/Min_Logo_Book.png"/>
+    </div>
+    <div class="login-block">
+        <button id="myBtn" class="loginbtn">Login</button>
+    </div>
+</header>
+
+ <!--login form-->
+<div id="myModal" class="modal">
+
+
+    <div class="modal-content">
+        <span class="close">x</span>
+
+
+        <ul class="tablogin">
+
+            <li><a href="javascript:void(0)" class="tablinkslogin" onclick="openForm(event, 'signIn')"
+                   id="defaultOpen">Sign in</a></li>
+            <li><a href="javascript:void(0)" class="tablinkslogin" onclick="openForm(event, 'signUp')">Sign up</a>
+            </li>
+
+        </ul>
+
+
+        <div id="signIn" class="tabcontentlogin">
+
+
+            <form id="login-form">
+                <input id="userName" type="text" placeholder="E-mail" value=""/>
+                <input id="userPw" type="password" placeholder="Password" value=""/>
+                <input id="login_btn" type="submit" value="Submit"/>
+            </form>
+
+        </div>
+        <div id="signUp" class="tabcontentlogin">
+
+
+
+            <form id="register-form">
+                <input id="E-mail" type="email" placeholder="E-mail" value=""/>
+                <input id="E-mail" type="text" placeholder="Name" value=""/>
+                <input id="E-mail" type="number" placeholder="Phone number" value=""/>
+                <input id="E-mail" type="text" placeholder="Country" value=""/>
+                <input id="E-mail" type="text" placeholder="City" value=""/>
+                <input id="pw" type="password" placeholder="Password" value=""/>
+                <input id="rgstr_btn" type="submit" value="Submit"/>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+<section>
+
+
+    <!--start video-->
+
+    <div class="video_block">
+
+        <video class="video_header" autoplay="autoplay" loop="loop">
+            <source src="videoplayback.mp4"></video>
+
+        <div class="div_black">
+            <img src="images/Logo_Book.png"/>
+            <h3 class="p_logo">Free online book club which was founded to encourage the practice, aiming to "make the whole world a library".</h3>
+        </div>
+
+    </div>
+
+    <!--end video-->
+    <div class="wrapper">
+        <div class="container_books">
+
+            <div class="div_events_left">
+                <h3 class="events">Events of the month</h3>
+
+                <div class="events_container">
+                    <img class="image" src="images/1.png" alt="Woman" >
+                    <h4>Day of Fiction Literature</h4>
+                    <i class="fa fa-calendar" aria-hidden="true">  7:30 AM | 16 Feb</i>
+                    <i class="fa fa-map-marker" aria-hidden="true">  220 Mug st, TX, USA</i>
+                    <button class="eventbutton">ADD EVENT</button>
+                </div>
+                <div class="events_container">
+                    <img class="image" src="images/2.png" alt="Woman" >
+                    <h4 class="event_h">Round Rock Academy</h4>
+                    <i class="fa fa-calendar" aria-hidden="true">  2:30 PM | 18 Jun</i>
+                    <i class="fa fa-map-marker" aria-hidden="true">  220 Beg st, FL, USA</i>
+                    <button class="eventbutton">ADD EVENT</button>
+                </div>
+                <div class="events_container">
+
+                    <img class="image" src="images/3.png" alt="Woman" >
+                    <h4 class="event_h">Biography Day Literature </h4>
+                    <i class="fa fa-calendar" aria-hidden="true">  11:30 AM | 16 Jun</i>
+                    <i class="fa fa-map-marker" aria-hidden="true">  220 Red st, NY, USA</i>
+                    <button class="eventbutton">ADD EVENT</button>
+                </div>
+                <div class="events_container">
+
+                    <img class="image" src="images/4.png" alt="Woman" >
+                    <h4 class="event_h">Meeting Fiction Publishersy</h4>
+                    <i class="fa fa-calendar" aria-hidden="true">  7:30 PM | 16 Jun</i>
+                    <i class="fa fa-map-marker" aria-hidden="true">  220 Red st, NY, USA</i>
+                    <button class="eventbutton">ADD EVENT</button>
+                </div>
+            </div>
+
+
+            <div class="books_right">
+
+
+                <div class="container_all_books">
+
+
+                    <div class="books-tabs table">
+                        <div class="div_books_left">
+
+
+                  <!--button add book-->
+                            <button id="bookBtn" class="eventbutton_book loginbtn">ADD BOOK</button>
+
+
+
+
+                        </div>
+
+                     <!--end add book-->
+
+
+
+
+
+                        <div class="div_books_right">
+
+                            <ul class="tab">
+
+                                <li><a href="javascript:void(0)" class="tablinks"
+                                       onclick="openGenres(event, 'All Genres')"
+                                       id="defaultOpenContent">All Genres</a></li>
+                                <li><a href="javascript:void(0)" class="tablinks"
+                                       onclick="openGenres(event, 'Fiction')">Fiction</a></li>
+                                <li><a href="javascript:void(0)" class="tablinks"
+                                       onclick="openGenres(event, 'Science')">Science</a></li>
+                                <li><a href="javascript:void(0)" class="tablinks"
+                                       onclick="openGenres(event, 'Business')">Business</a>
+                                </li>
+                                <li><a href="javascript:void(0)" class="tablinks"
+                                       onclick="openGenres(event, 'Philosophy')">Philosophy</a>
+                                </li>
+                                <li><a href="javascript:void(0)" class="tablinks"
+                                       onclick="openGenres(event, 'Biography')">Biography</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="All Genres" class="tabcontent"></div>
+
+                    <div data-id="1" id="Fiction" class="tabcontent"></div>
+
+                    <div data-id="2" id="Science" class="tabcontent"></div>
+
+                    <div data-id="3" id="Business" class="tabcontent"></div>
+
+                    <div data-id="4" id="Philosophy" class="tabcontent"></div>
+
+                    <div data-id="5" id="Biography" class="tabcontent"></div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<footer>
+<p class="footer">© 2016. All Rights Reserved</p>
+
+
+
+
+</footer>
+
+<script type="text/javascript" src="js/local-storage.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
